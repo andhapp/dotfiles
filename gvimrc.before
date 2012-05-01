@@ -1,0 +1,2 @@
+" This file is sourced before any other plugin and has access to functions
+" defined by Janus. The gvimrc file is used for all the GUI related settings.

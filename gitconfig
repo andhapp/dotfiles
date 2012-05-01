@@ -1,0 +1,30 @@
+[user]
+	name = Anuj Dutta
+	email = anuj@andhapp.com
+[github]
+	user = andhapp
+[alias]
+  st = status
+  ci = commit
+  cim = commit --message
+  cAim = commit -A --message
+  caim = commit -a --message
+  br = branch
+  co = checkout
+  cp = cherry-pick
+  df = diff
+  dc = diff --cached
+  pl = pull
+  ph = push
+  lg = log -p
+  logg = log --graph --decorate --pretty=oneline --abbrev-commit
+  logga = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  logb = log --pretty=oneline --abbrev-commit --branches=*
+  ls = ls-files
+
+  # Show files ignored by git:
+  ign = ls-files -o -i --exclude-standard
+[apply]
+	whitespace = nowarn
+[core]
+	excludesfile = /Users/andhapp/.gitignore_global

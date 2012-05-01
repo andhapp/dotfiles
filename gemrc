@@ -1,0 +1,10 @@
+--- 
+:sources: 
+- http://rubygems.org
+:verbose: true
+:benchmark: false
+:update_sources: true
+gempath: 
+:bulk_threshold: 1000
+:backtrace: false
+rdoc: --inline-source --line-numbers --format=html --template=hanna

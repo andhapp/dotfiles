@@ -1,0 +1,21 @@
+" This file is used for GUI settings and is sourced after Janus and the
+" plugins so it has access to all the functions defined by Janus. 
+" It can be used to overwrite Janus and plugin settings.
+
+" map Ctrl-b to open fuzzybuffer
+"map <C-b> :FufBuffer<CR>
+
+" map Ctrl-b to open fuzzybuffer
+"map <C-f> :FufFile<CR>
+
+" map Shift-x to open fuzzybuffer
+"map <S-x> :LustyBufferExplorer<CR>
+
+" map Command-x to open fuzzybuffer
+"map <D-d> :LustyJuggler<CR>
+
+" Set ack as the grep programme for vim
+set grepprg=ack
+
+" color theme
+color molokai

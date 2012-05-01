@@ -1,0 +1,9 @@
+" This file is sourced after Janus and has access to all the functions
+" defined by Janus and can be used to customise plugins.
+
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+filetype plugin indent on     " required! 
+
+:set hidden

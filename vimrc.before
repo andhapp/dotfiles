@@ -1,0 +1,4 @@
+" This file is sourced before any other plugin and has access to functions
+" defined by Janus. Can be used to customise Janus.
+
+let mapleader = ","
