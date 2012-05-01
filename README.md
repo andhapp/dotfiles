@@ -27,15 +27,15 @@ keep them in git. Below is a list and a small description of each:
 
 # Installation
 
-## Dependencies
+### Dependencies
 
 The installation depends upon the following things:
 
 * HOME env variable
-* [Janus Vim dustribution](https://github.com/carlhuda/janus)
+* [Janus Vim distribution](https://github.com/carlhuda/janus)
 
 
-## Install script
+### Install script
 
 Just run the install script like:
 
@@ -48,17 +48,17 @@ and other customisations. It's sourced in bashrc so anything that you
 add in here will be available at bash prompt.
 
 
-## Test Drive
+### Test Drive
 
 If you want to test run, just do:
 
   install.sh test
 
-This will create a test directory in your local checked out respository
+This will create a test directory in your cloned respository
 and run through the process of symlinking scripts with the one in the
 respository.
 
-## Backup
+### Backup
 
 If you're running it for the first time, then you will have the actual
 dot files in your $HOME directory. The script will create a folder called 

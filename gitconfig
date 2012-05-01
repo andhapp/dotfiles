@@ -27,4 +27,4 @@
 [apply]
 	whitespace = nowarn
 [core]
-	excludesfile = /Users/andhapp/.gitignore_global
+	excludesfile = ~/.gitignore_global
