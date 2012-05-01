@@ -1,2 +1,4 @@
-" This file is sourced before any other plugin and has access to functions
-" defined by Janus. The gvimrc file is used for all the GUI related settings.
+" This file is sourced before any other file or plugin.
+" Janus core is loaded before this script, so you get
+" access to all the functions defined in janus.vim.
+

@@ -1,6 +1,6 @@
-" This file is used for GUI settings and is sourced after Janus and the
-" plugins so it has access to all the functions defined by Janus. 
-" It can be used to overwrite Janus and plugin settings.
+" This file is used for GUI settings and is sourced after Janus but 
+" before other plugins are loaded.  This allows you to override 
+" anything set by Janus or any plugin.
 
 " map Ctrl-b to open fuzzybuffer
 "map <C-b> :FufBuffer<CR>

@@ -1,9 +1,9 @@
-" This file is sourced after Janus and has access to all the functions
-" defined by Janus and can be used to customise plugins.
+" This file is loaded after Janus but before other plugins are loaded. 
+" This allows you to override anything set by Janus or any plugin.
 
 set nocompatible               " be iMproved
+set hidden
+
 filetype off                   " required!
 
 filetype plugin indent on     " required! 
-
-:set hidden

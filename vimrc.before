@@ -1,4 +1,4 @@
-" This file is sourced before any other plugin and has access to functions
-" defined by Janus. Can be used to customise Janus.
+" This file is sourced before any other file or plugin. 
+" Janus core is loaded before this script, so you get access to all the functions defined in janus.vim.
 
 let mapleader = ","
