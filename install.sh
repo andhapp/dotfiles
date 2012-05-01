@@ -13,7 +13,7 @@ backup=$PWD/backup
 mkdir_if_unexist $backup
 
 # list of files not to be symlinked
-excluded_files=("README" "bashrc.local.example" "install.sh" "test" "backup")
+excluded_files=("README.md" "bashrc.local.example" "install.sh" "test" "backup")
 
 # Copy bashrc.local.example to bashrc.local if none exists
 if [ ! -e $PWD/bashrc.local ]; then `cp bashrc.local.example bashrc.local`; fi
@@ -35,5 +35,5 @@ do
   fi
 done
 
-update_symlink $PWD/vim/janus/vim/gvimrc $destination/.gvimrc
-update_symlink $PWD/vim/janus/vim/vimrc $destination/.vimrc
+update_symlink $destination/.vim/janus/vim/gvimrc $destination/.gvimrc
+update_symlink $destination/.vim/janus/vim/vimrc $destination/.vimrc

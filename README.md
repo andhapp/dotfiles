@@ -21,13 +21,19 @@ keep them in git. Below is a list and a small description of each:
 * vimrc.before - For config that Janus can use i.e. before it's
   initialised.
 * zshrc - Humble zsh config
-* janus/ - Janus's directory for installing plugins
-* vim/ - Vim's HOME
 * bash/ - Collection of useful bash scripts
 
 
 
 # Installation
+
+## Dependencies
+
+The installation depends upon the following things:
+
+* HOME env variable
+* [Janus Vim dustribution](https://github.com/carlhuda/janus)
+
 
 ## Install script
 

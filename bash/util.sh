@@ -17,6 +17,8 @@ mkdir_if_unexist() {
 }
 
 update_symlink() {
-  if [ -e $2 ]; then `rm $2`; fi
+  if [ -L $2 ]; then
+    `rm $2`
+  fi
   create_symlink $1 $2
 }
