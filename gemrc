@@ -8,3 +8,4 @@ gempath:
 :bulk_threshold: 1000
 :backtrace: false
 rdoc: --inline-source --line-numbers --format=html --template=hanna
+:custom_shebang: $env ruby_noexec_wrapper
