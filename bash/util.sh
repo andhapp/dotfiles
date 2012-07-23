@@ -22,3 +22,7 @@ update_symlink() {
   fi
   create_symlink $1 $2
 }
+
+load_rvm() {
+  source ~/.rvm/scripts/rvm
+}
