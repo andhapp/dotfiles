@@ -1,5 +1,7 @@
 function git_parse_branch() {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+  if [[ -d ".git" && ! -L ".git" ]] ; then
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+  fi
 }
 
 function git_commit_and_push() {
