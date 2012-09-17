@@ -1,0 +1,1 @@
+export PS1="\e[0;36mgit-sh>\e[m\[\033[32m\]\W\[\033[33m\]\$(git_parse_branch)\$ \[\033[0m\]"
