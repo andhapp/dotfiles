@@ -17,6 +17,7 @@
   pl = pull
   ph = push
   lg = log -p
+  rmc = rm -r --cached .
   logg = log --graph --decorate --pretty=oneline --abbrev-commit
   logga = log --graph --decorate --pretty=oneline --abbrev-commit --all
   logb = log --pretty=oneline --abbrev-commit --branches=*
@@ -28,3 +29,24 @@
 	whitespace = nowarn
 [core]
 	excludesfile = ~/.gitignore_global
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow 
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[color "sh"]
+	branch = yellow reverse
+	workdir = blue bold
+  dirty = red
