@@ -4,3 +4,4 @@ html=.haml
 html=.html.haml
 --type-add
 css=.sass,.scss
+--color
