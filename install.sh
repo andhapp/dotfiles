@@ -13,7 +13,7 @@ backup=$PWD/backup
 mkdir_if_unexist $backup
 
 # list of files not to be symlinked
-excluded_files=("README.md" "bashrc.local.example" "install.sh" "test" "backup")
+excluded_files=("README.md" "config.fish" "config.fish.local" "bashrc.local.example" "install.sh" "test" "backup")
 
 # Copy bashrc.local.example to bashrc.local if none exists
 if [ ! -e $PWD/bashrc.local ]; then `cp bashrc.local.example bashrc.local`; fi
@@ -34,6 +34,10 @@ do
     create_symlink $file $new_file
   fi
 done
+
+# Create symlink for fish shell
+create_symlink config.fish.local $destination/.config/fish/config.fish.local
+create_symlink config.fish $destination/.config/fish/config.fish
 
 update_symlink $destination/.vim/janus/vim/gvimrc $destination/.gvimrc
 update_symlink $destination/.vim/janus/vim/vimrc $destination/.vimrc

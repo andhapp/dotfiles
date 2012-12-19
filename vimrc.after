@@ -1,5 +1,5 @@
 " This file is loaded after Janus but before other plugins are loaded. 
-" This allows you to override anything set by Janus or any plugin.
+" This allows you to override anything set by Janus.
 
 set nocompatible               " be iMproved
 set hidden

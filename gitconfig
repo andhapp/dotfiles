@@ -18,6 +18,7 @@
   ph = push
   lg = log -p
   rmc = rm -r --cached .
+  logh = log --follow -p
   logg = log --graph --decorate --pretty=oneline --abbrev-commit
   logga = log --graph --decorate --pretty=oneline --abbrev-commit --all
   logb = log --pretty=oneline --abbrev-commit --branches=*

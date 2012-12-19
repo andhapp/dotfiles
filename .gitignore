@@ -1,4 +1,5 @@
 bashrc.local
+config.fish.local
 test
 backup
 /vim/_backup/
