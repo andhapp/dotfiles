@@ -3,5 +3,9 @@ html=.haml
 --type-add
 html=.html.haml
 --type-add
+js=.js.coffee
+--type-add
 css=.sass,.scss
 --color
+--ignore-dir=vendor
+--ignore-dir=tmp
