@@ -15,7 +15,7 @@ mkdir_if_unexist $backup
 fish_config_home=$destination/.config/fish
 
 # list of files not to be symlinked
-excluded_files=("README.md" "config.fish" "config.fish.local" "bashrc.local.example" "install.sh" "test" "backup")
+excluded_files=("README.md" "fish" "config.fish" "config.fish.local" "bashrc.local.example" "install.sh" "test" "backup")
 
 # Copy bashrc.local.example to bashrc.local if none exists
 if [ ! -e $PWD/bashrc.local ]; then `cp bashrc.local.example bashrc.local`; fi
@@ -38,8 +38,8 @@ do
 done
 
 # Create symlink for fish shell and it's functions
-update_symlink config.fish.local $fish_config_home/config.fish.local
-update_symlink config.fish $fish_config_home/config.fish
+update_symlink $PWD/config.fish.local $fish_config_home/config.fish.local
+update_symlink $PWD/config.fish $fish_config_home/config.fish
 update_symlink $PWD/fish/functions/cd.fish $fish_config_home/functions/cd.fish
 update_symlink $PWD/fish/functions/rvm.fish $fish_config_home/functions/rvm.fish
 
