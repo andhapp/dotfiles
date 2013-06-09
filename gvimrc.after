@@ -2,20 +2,10 @@
 " before other plugins are loaded.  This allows you to override 
 " anything set by Janus or any plugin.
 
-" map Ctrl-b to open fuzzybuffer
-"map <C-b> :FufBuffer<CR>
-
-" map Ctrl-b to open fuzzybuffer
-"map <C-f> :FufFile<CR>
-
-" map Shift-x to open fuzzybuffer
-"map <S-x> :LustyBufferExplorer<CR>
-
-" map Command-x to open fuzzybuffer
-"map <D-d> :LustyJuggler<CR>
-
 " Set ack as the grep programme for vim
 set grepprg=ack
 
 " color theme
 color molokai
+
+set guioptions-=r
