@@ -9,12 +9,7 @@ end
 
 function current_git_branch
   if test -d .git;
-    set -l branch (git rev-parse --abbrev-ref HEAD)
-
-    if test $branch != "";
-      echo "($branch)"
-    end
-
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
   end
 end
 

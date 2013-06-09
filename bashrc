@@ -4,7 +4,7 @@
 . ~/.bash/shell_command.sh
 . ~/.bash/util.sh
 
-export PS1="\[\033[32m\]\w\[\033[33m\]$(current_git_branch)\$ \[\033[0m\]"
+export PS1="\[\033[32m\]\w\[\033[33m\]\$(current_git_branch)\$ \[\033[0m\]"
 export PATH=$PATH:/opt/local/bin:/usr/local/mysql/bin:/usr/local/pgsql/bin:/usr/local/Cellar/openssl/0.9.8r/lib:/usr/local/Cellar/openssl/0.9.8r/include:$HOME/.rvm/bin
 export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info

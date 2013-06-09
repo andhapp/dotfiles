@@ -1,9 +1,6 @@
 function current_git_branch {
   if [[ -d ".git" && ! -L ".git" ]]; then
-    branch=`git rev-parse --abbrev-ref HEAD`
-    if [[ $branch != "" ]]; then
-      echo "($branch)"
-    fi
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
   fi
 }
 
