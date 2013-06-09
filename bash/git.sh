@@ -27,6 +27,19 @@ function git_repository_usage {
   done
 }
 
+function files_usage {
+  match_pattern=$@
+
+  if [[ $match_pattern == "" ]]; then
+    echo "Need a match pattern for the files"
+    return
+  fi
+
+  for filename in $(find app config spec -iname $match_pattern); do
+    echo "$filename `number_of_commits`" | xargs echo
+  done
+}
+
 function first_commit {
   git_history | tail -1
 }
