@@ -6,6 +6,8 @@ html=.html.haml
 js=.js.coffee
 --type-add
 css=.sass,.scss
+--type-add
+php=.php,.inc
 --color
 --ignore-dir=vendor
 --ignore-dir=tmp
