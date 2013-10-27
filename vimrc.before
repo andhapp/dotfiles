@@ -1,6 +1,10 @@
 " This file is sourced before any other file or plugin. 
-" Janus core is loaded before this script, so you get access to all the functions defined in janus.vim.
+" Janus core is loaded before this script, 
+" so you get access to all the functions defined in janus.vim.
+"
+" BEFORE Janus plugins + Other plugins, AFTER Janus Core
 
 let mapleader = ","
+let maplocalleader = "\\"
 
 "call janus#disable_plugin('supertab')
