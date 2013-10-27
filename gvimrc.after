@@ -5,6 +5,8 @@
 " Set ack as the grep programme for vim
 set grepprg=ack
 
+set guifont=Hermit:h15
+
 " color theme
 color molokai
 
