@@ -9,6 +9,8 @@ export PATH=$PATH:/opt/local/bin:/usr/local/mysql/bin:/usr/local/pgsql/bin:/usr/
 export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
 export ARCHFLAGS="-arch i386 -arch x86_64"
+export RUBY_GC_MALLOC_LIMIT=90000000
+export RUBY_FREE_MIN=200000
 
 alias shell=shell_command
 alias tmux="TERM=screen-256color-bce tmux"
