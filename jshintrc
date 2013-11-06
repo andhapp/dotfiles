@@ -1,5 +1,6 @@
 {
   "white": false,
   "undef": false,
+  "expr": true,
   "smarttabs": true
 }
