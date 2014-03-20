@@ -10,10 +10,14 @@ export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
 export ARCHFLAGS="-arch i386 -arch x86_64"
 export RUBY_GC_MALLOC_LIMIT=90000000
-export RUBY_FREE_MIN=200000
+export RUBY_GC_HEAP_FREE_SLOTS=200000
 
 alias shell=shell_command
 alias tmux="TERM=screen-256color-bce tmux"
 
 #. "`brew --prefix grc`/etc/grc.bashrc"
 . ~/.bashrc.local
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+      . $(brew --prefix)/etc/bash_completion
+fi
