@@ -36,11 +36,12 @@
 
   # Show files ignored by git:
   ign = ls-files -o -i --exclude-standard
+	d = difftool
 [apply]
 	whitespace = nowarn
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
 [color]
   branch = auto
   diff = auto
@@ -63,4 +64,10 @@
 	workdir = blue bold
   dirty = red
 [push]
-	default = tracking
+  default = tracking
+[tag]
+	sort = version:refname
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
