@@ -37,3 +37,4 @@ done
 
 update_symlink $destination/.vim/janus/vim/gvimrc $destination/.gvimrc
 update_symlink $destination/.vim/janus/vim/vimrc $destination/.vimrc
+update_symlink $destination/.vim-plugins $destination/.janus
