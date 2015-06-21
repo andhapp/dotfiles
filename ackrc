@@ -5,6 +5,8 @@ html=.html.haml
 --type-add
 js=.js.coffee
 --type-add
+js=.coffee
+--type-add
 css=.sass,.scss
 --type-add
 php=.php,.inc
