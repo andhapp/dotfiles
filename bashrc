@@ -11,6 +11,7 @@ export INFOPATH=$INFOPATH:/opt/local/share/info
 export ARCHFLAGS="-arch i386 -arch x86_64"
 export RUBY_GC_MALLOC_LIMIT=90000000
 export RUBY_GC_HEAP_FREE_SLOTS=200000
+export DOCKER_HOST=tcp://192.168.59.103:2375
 
 alias shell=shell_command
 alias tmux="TERM=screen-256color-bce tmux"
@@ -21,3 +22,9 @@ alias tmux="TERM=screen-256color-bce tmux"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
       . $(brew --prefix)/etc/bash_completion
 fi
+
+export NVM_DIR="/Users/andhapp/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
