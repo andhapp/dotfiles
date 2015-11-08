@@ -12,28 +12,12 @@ keep them in git. Below is a list and a small description of each:
 * gitconfig - git's config
 * gitignore_global - global ignore
 * gitk - Settings for gitk
-* gvimrc.after - For config after Janus has been initialised.
-* gvimrc.before - For config that Janus can use i.e. before it's
   initialised.
 * hushlogin - Escapes running login on firing Terminal, and is faster.
 * tmux.conf - Humble tmux config
-* vimrc.after - For config after Janus has been initialised.
-* vimrc.before - For config that Janus can use i.e. before it's
-  initialised.
-* zshrc - Humble zsh config
 * bash/ - Collection of useful bash scripts
 
-
-
 # Installation
-
-### Dependencies
-
-The installation depends upon the following things:
-
-* HOME env variable
-* [Janus Vim distribution](https://github.com/carlhuda/janus)
-
 
 ### Install script
 
@@ -46,7 +30,6 @@ directory and copy the file bashrc.local.example to bashrc.local and
 symlink that as well. bashrc.local is not checked-in and is for aliases
 and other customisations. It's sourced in bashrc so anything that you
 add in here will be available at bash prompt.
-
 
 ### Test Drive
 
