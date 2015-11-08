@@ -1,4 +1,0 @@
-" This file is sourced before any other file or plugin.
-" Janus core is loaded before this script, so you get
-" access to all the functions defined in janus.vim.
-
